@@ -1,9 +1,4 @@
 const models = {
-  ga: [
-    "@cf/meta/llama-2-7b-chat-int8",
-    "@cf/meta/llama-2-7b-chat-fp16",
-    "@cf/mistral/mistral-7b-instruct-v0.1",
-  ],
   beta: [
     "@cf/deepseek-ai/deepseek-math-7b-instruct",
     "@cf/defog/sqlcoder-7b-2",
@@ -36,8 +31,12 @@ const models = {
     "@hf/thebloke/openhermes-2.5-mistral-7b-awq",
     "@hf/thebloke/zephyr-7b-beta-awq",
   ],
+  ga: [
+    "@cf/meta/llama-2-7b-chat-fp16",
+    "@cf/meta/llama-2-7b-chat-int8",
+    "@cf/mistral/mistral-7b-instruct-v0.1",
+  ],
 };
-
 const domReady = (callback) => {
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", callback);
